@@ -11,4 +11,8 @@ export class AppComponent {
     public getName(): any {
         return this.model.user;
     }
+
+    public getAllTodoItems(): any {
+        return this.model.items;
+    }
 }
