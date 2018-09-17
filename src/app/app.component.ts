@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-
-class Item {
-    constructor(
-        private readonly purchase: string,
-        private readonly done: boolean,
-        private readonly price: number
-    ) {}
-}
+import { Model } from './model';
 
 @Component({
-    selector: 'purchase-app',
-    template: `<div><h1>List of products</h1></div>`
+    selector: 'todo-app',
+    templateUrl: './app.component.html'
 })
-export class AppComponent {}
+export class AppComponent {
+    private model = new Model();
+
+    public getName(): any {
+        return this.model.user;
+    }
+}
