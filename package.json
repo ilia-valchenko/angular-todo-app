@@ -1,18 +1,18 @@
 {
-    "name": "todo-list-app",
-    "version": "1.0.0",
-    "description": "First Angular 5 Project",
-    "author": "Ilya Valchanka",
-    "scripts": {
-        "ng": "ng",
-        "start": "ng serve",
-        "test": "ng test",
-        "lint": "ng lint",
-        "e2e": "ng e2e",
-        "dev": "webpack-dev-server --hot --open",
-        "build": "webpack"
-    },
-    "dependencies": {
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "First Angular 5 Project",
+  "author": "Ilya Valchanka",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "dev": "webpack-dev-server --hot --open",
+    "build": "webpack"
+  },
+  "dependencies": {
     "@angular/common": "~6.0.0",
     "@angular/compiler": "~6.0.0",
     "@angular/core": "~6.0.0",
@@ -21,14 +21,16 @@
     "@angular/platform-browser": "~6.0.0",
     "@angular/platform-browser-dynamic": "~6.0.0",
     "@angular/router": "~6.0.0",
+    "@types/lodash": "^4.14.116",
+    "bootstrap": "4.0.0-alpha.4",
     "core-js": "2.5.7",
-    "rxjs":"6.2.2",
-    "zone.js": "0.8.26",
-    "bootstrap": "4.0.0-alpha.4"
+    "lodash": "^4.17.11",
+    "rxjs": "6.2.2",
+    "zone.js": "0.8.26"
   },
   "devDependencies": {
     "@types/jasmine": "2.5.38",
-    "@types/node":"10.5.2",
+    "@types/node": "10.5.2",
     "codelyzer": "~2.0.0",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~3.2.0",

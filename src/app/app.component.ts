@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Model } from './model';
+import { Model, TodoItem } from './model';
+import * as _ from "lodash";
 
 @Component({
     selector: 'todo-app',
@@ -12,7 +13,13 @@ export class AppComponent {
         return this.model.user;
     }
 
-    public getAllTodoItems(): any {
-        return this.model.items;
+    public getIncompleteTodoItems(): any {
+        return this.model.items.filter(item => !item.done);
+    }
+
+    public addItem(newItem: any): void {
+        if (!_.isEmpty(newItem)) {
+            this.model.items.push(new TodoItem(newItem, false));
+        }
     }
 }
